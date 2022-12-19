@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uap_pbo.TambahMakananController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e3ff" height="502.0" layoutX="-1.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="779.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="37.0" layoutX="312.0" layoutY="27.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="9.0" width="196.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="350.0" layoutX="162.0" layoutY="107.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="10.0" width="580.0" />
+      <Text layoutX="341.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Makanan">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="203.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daya Tahan" />
+      <Text layoutX="422.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama produk" />
+      <Text layoutX="203.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harga" />
+      <Text layoutX="433.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jumlah" />
+      <Text layoutX="203.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diskon" />
+      <TextField fx:id="dayaTahan" layoutX="302.0" layoutY="120.0" prefHeight="26.0" prefWidth="104.0" />
+      <TextField fx:id="namaProduk" layoutX="518.0" layoutY="119.0" prefHeight="26.0" prefWidth="104.0" />
+      <TextField fx:id="harga" layoutX="302.0" layoutY="158.0" prefHeight="26.0" prefWidth="104.0" />
+      <TextField fx:id="jumlah" layoutX="518.0" layoutY="158.0" prefHeight="26.0" prefWidth="104.0" />
+      <TextField fx:id="diskon" layoutX="302.0" layoutY="196.0" prefHeight="26.0" prefWidth="104.0" />
+      <Button fx:id="tambahMakanan" layoutX="643.0" layoutY="159.0" mnemonicParsing="false" onAction="#addMakanan" style="-fx-background-color: #c4ff59;" text="Tambah" />
+      <TableView fx:id="output" layoutX="225.0" layoutY="248.0" onSort="#outputData" prefHeight="200.0" prefWidth="478.0">
+        <columns>
+          <TableColumn fx:id="dayaTahanoutput" prefWidth="104.79998779296875" text="Daya Tahan" />
+            <TableColumn fx:id="hargaoutput" prefWidth="114.4000244140625" text="Harga" />
+            <TableColumn fx:id="namaProdukoutput" prefWidth="137.60000610351562" text="Nama Produk" />
+            <TableColumn fx:id="jumlahoutput" prefWidth="115.20001220703125" text="Jumlah" />
+        </columns>
+      </TableView>
+      <Button fx:id="hapus" layoutX="648.0" layoutY="204.0" mnemonicParsing="false" onAction="#hapusMakanan" style="-fx-background-color: #c4ff59;" text="Hapus" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="273.0" layoutX="-64.0" layoutY="146.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="10.0" width="184.0" />
+      <Button fx:id="topenjualan" layoutX="14.0" layoutY="218.0" mnemonicParsing="false" onAction="#toPenjualan" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #c4ff59;" text="Penjualan" />
+      <Button fx:id="tobarang" layoutX="14.0" layoutY="266.0" mnemonicParsing="false" onAction="#toBarang" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #c4ff59;" text="Barang" />
+      <Button fx:id="tokategori" layoutX="14.0" layoutY="316.0" mnemonicParsing="false" onAction="#toKategori" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #c4ff59;" text="Kategori" />
+      <TextField fx:id="inputhapus" layoutX="518.0" layoutY="203.0" prefHeight="26.0" prefWidth="104.0" promptText="nama makanan" />
+   </children>
+</AnchorPane>
