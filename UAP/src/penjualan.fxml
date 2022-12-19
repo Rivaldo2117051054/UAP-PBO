@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="423.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uap_pbo.PenjualanController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e3ff" height="452.0" layoutX="-12.0" layoutY="-11.0" stroke="BLACK" strokeType="INSIDE" width="640.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="225.0" layoutX="185.0" layoutY="130.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="10.0" width="377.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" layoutX="262.0" layoutY="40.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="10.0" width="174.0" />
+      <Text layoutX="301.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PENJUALAN">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="208.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Produk">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Text>
+      <Text layoutX="208.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jumlah">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Text>
+      <Text layoutX="208.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stok">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Text>
+      <TextField fx:id="listProduk" layoutX="302.0" layoutY="176.0" prefHeight="26.0" prefWidth="119.0" />
+      <TextField fx:id="jumlah" layoutX="303.0" layoutY="217.0" prefHeight="26.0" prefWidth="119.0" />
+      <TextField fx:id="stok" layoutX="304.0" layoutY="261.0" prefHeight="26.0" prefWidth="119.0" />
+      <Button fx:id="tambahPenjualan" layoutX="442.0" layoutY="260.0" mnemonicParsing="false" onAction="#addPenjualan" style="-fx-background-color: #c4ff59;" text="tambah" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="205.0" layoutX="-5.0" layoutY="140.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="10.0" width="150.0" />
+      <Button fx:id="tobarang" layoutX="21.0" layoutY="166.0" mnemonicParsing="false" onAction="#toBarang" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #c4ff59;" text="Barang" />
+      <Button fx:id="tokategori" layoutX="21.0" layoutY="215.0" mnemonicParsing="false" onAction="#toKategori" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #c4ff59;" text="Kategori" />
+      <Button fx:id="tomakanan" layoutX="21.0" layoutY="265.0" mnemonicParsing="false" onAction="#toMakanan" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #c4ff59;" text="Makanan" />
+      <Button fx:id="hapus" layoutX="446.0" layoutY="309.0" mnemonicParsing="false" onAction="#hapuspenjualan" style="-fx-background-color: #c4ff59;" text="Hapus" />
+      <TextField fx:id="inputhapus" layoutX="305.0" layoutY="309.0" prefHeight="26.0" prefWidth="119.0" promptText="list" />
+   </children>
+</AnchorPane>
